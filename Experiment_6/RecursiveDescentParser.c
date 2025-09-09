@@ -2,6 +2,8 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+#define MAXIMUM_SIZE 1000
+
 const char *input;
 int pos = 0;
 
@@ -74,7 +76,7 @@ void parse() {
 }
 
 int main() {
-    char expr[100];
+    char expr[MAXIMUM_SIZE];
     printf("Enter the expression: ");
     scanf("%s", expr);
 
